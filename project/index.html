@@ -1,0 +1,132 @@
+<html><head>
+  <title></title>
+  <style type="text/css">
+
+
+    /* background */
+    body{
+      background-image: url('https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; 
+      width: 100vw;
+      height: 100vh;
+      margin: 0 0;
+      cursor: url(shoot1.png) 0 0, default;
+      position: fixed;
+    /* text */
+    }
+    div{
+      text-align: center;
+
+    }
+    /* botton 1 player  */
+    .position_botton{
+      display: inline-block;
+      margin: auto 30%;
+      position: fixed;
+      cursor: url(shoot1.png) 0 0, default;
+
+    }
+
+
+    .button {
+  border-radius: 4px;
+  background-color: hsl(0,100%,70%);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: center;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.25s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+  /* botton 2 players */
+  .button2 {
+  border-radius: 4px;
+  background-color: hsl(0,100%,70%);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+  
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.25s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*sidebar*/
+
+
+  </style>
+</head>
+  <body>
+    <br><br><br><br><br><br><br><br><br><br><br>
+  <div style="font-style: italic;font-family: fantasy; font-size: 50px; color: white;"><center>PING-PONG GAME</center></div>
+  <hr class="line" style="margin:auto;width:30%"> 
+    <br><br><br><br>
+  <div class="position_botton">
+    &emsp;&emsp;&emsp;&emsp;<button class="button"><span>1 PLAYER</span></button><button class="button2"><span>2 PLAYER</span></button>
+  </div>
+
+  
+
+  
+  </body>
+</html>
