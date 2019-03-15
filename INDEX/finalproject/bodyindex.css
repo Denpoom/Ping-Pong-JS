@@ -1,0 +1,142 @@
+ body{
+      background-image: url('https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; 
+      width: 100vw;
+      height: 100vh;
+      margin: 0 0;
+      cursor: url(shoot1.png) 0 0, default;
+      position: fixed;
+    /* text */
+    }
+   
+    /* botton 1 player  */
+    .position_botton{
+      display: inline-block;
+      margin: auto 30%;
+      position: fixed;
+      cursor: url(shoot1.png) 0 0, default;
+
+    }
+
+
+    .button {
+  border-radius: 4px;
+  background-color: hsl(0,100%,70%);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: center;
+  
+}
+
+.button span {
+  cursor: url(shoot1.png) 0 0, default;
+  display: inline-block;
+  position: relative;
+  transition: 0.25s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+  /* botton 2 players */
+  .button2 {
+  border-radius: 4px;
+  background-color: hsl(0,100%,70%);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: url(shoot1.png) 0 0, default;
+  margin: 5px;
+
+  
+}
+
+.button2 span {
+  cursor: url(shoot1.png) 0 0, default;
+  display: inline-block;
+  position: relative;
+  transition: 0.25s;
+}
+
+.button2 span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*sidebar*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+#side{
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background:#151719;
+  left: -200px;
+  transition: all 500ms linear;
+  left: -200px
+  
+}
+#side.active{
+  left: 0px;
+}
+
+#side ul li{
+  color: rgba(230,230,230,0.9);
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+#side .toggle-btn{
+  position: absolute;
+  left: 230px;
+  top: 20px
+}
+#side .toggle-btn span{
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #151719;
+  margin: 5px 0px;
+}
