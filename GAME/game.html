@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <html style="min-height: 100%">
+ <head>
+ 	<title>PING-PONG</title>
+    <meta charset="UTF-8">
+ 	<link rel="stylesheet" type="text/css" href="game.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link href="./pic/icon.ico" rel="shortcut icon" type="image/x-icon" />
+ </head>
+ <body onload="myFunction()" style="height: 100%">
+ 	<h1 class="title">Ping-Pong</h1>
+    <div class="score" id="p1-score">
+        <span>0</span>
+    </div>
+    <div class="score" id="p2-score">
+        <span>0</span>
+    </div>
+    <div class="TIME">
+            <h4>TIME LEFT!!</h4>
+    </div>
+    <center><div class="timer">
+        <span></span>
+    </div></center>
+    <br>
+    <canvas id="pongContainer"></canvas>
+    <div class="gameover">
+        <span>GAME OVER</span>
+        <i class="em em-alarm_clock"></i>
+    </div>
+    <!-- sound -->
+    <audio id="hit">
+        <source src="./sound/hit.wav" type="audio/ogg">
+    </audio>
+    <audio id="miss">
+        <source src="./sound/miss.wav" type="audio/ogg">
+    </audio>
+    <iframe src="./sound/Getting.mp3" allow="autoplay" style="display:none"></iframe>
+    <!-- JS -->
+    <script src="game.js"></script>
+ </body>
+ </html>

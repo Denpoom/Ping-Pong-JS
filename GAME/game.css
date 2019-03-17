@@ -1,0 +1,105 @@
+body{
+    background-image: url("https://media.giphy.com/media/29pO4769mY0oWHnc7C/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 935px;
+}
+
+@font-face {
+  font-family: pixel;
+  src: url(./font/minecraft.woff);
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    font-size: 3rem;
+    font-family : "pixel", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+}
+
+.score {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    position: fixed;
+    top: 0;
+    font-family : "pixel", sans-serif;
+    text-shadow: 1px 1px 1px #b7720d;
+    font-weight: bold;
+    left: 0;
+    background: #000;
+    padding: 10px 30px;
+    border-radius: 0 0 10px 0;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+}
+#p2-score {
+    text-align: center;
+    color: black;
+    border-radius: 0 0 0 10px;
+    right: 0;
+    left: inherit;
+    background-color: #FFF;
+}
+h3 {
+  color: #e0eff2;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family : "pixel", sans-serif;
+  font-size : 30px;
+  text-shadow: -2px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+}
+h4 {
+  color: #e0eff2;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family : "pixel", sans-serif;
+  font-size : 20px;
+  text-shadow: -2px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+}
+
+.timer{
+  background-color:#333; width:300px;height:30px;
+  background-position: center;
+  box-shadow: 0px 3px 20px 0px rgba(360, 0, 0, 0.3);
+}
+
+.timer span{
+  display:block;
+  background:repeating-linear-gradient(-45deg, #000, rgba(0, 0, 0, 0) 25px, #ff0000 25px, #FFF 50px);
+  width:300px; height:30px;
+  animation:timer 120s linear;
+}
+
+@keyframes timer{
+0%{width:10px;}
+100%{width:300px; display:block;}
+}
+
+.gameover{
+  position:fixed; z-index:100000; left:0; top:0; bottom:0; right:0; background-color:rgba(0,0,0,0.8);
+  animation:gameover 120s linear forwards;
+  font-family : "pixel", sans-serif;
+  font-size:80px; color:white; font-weight:bold; text-align:center;
+  text-indent:0;
+  line-height:500px;
+}
+
+@keyframes gameover{
+0%{left:-5000px;bottom:100%;}
+97%{left:-5000px;bottom:100%;}
+100%{ left:0px;}
+}
+
+canvas {
+    display: block;
+    width: 80vw;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 0px 3px 20px 0px rgba(360, 0, 0, 0.3);
+}

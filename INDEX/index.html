@@ -1,26 +1,40 @@
 <html><head>
-  <title>Ping-Pong Game</title>
-  <link rel="stylesheet" type="text/css" href="bodyindex.css">
+<title>Ping-Pong Game</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="http://jabont.com/jayss/jayss.css">
+<link rel="stylesheet" type="text/css" href="http://jabont.com/jayss/jayss-custom.php?ggfont=Mitr&amp;font=333&amp;cl=FFF,FFF,000">
+<link href="https://fonts.googleapis.com/css?family=Mitr:400,600" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+	body{
+		cursor: url(./pic/pong.png) 0 0, default;
+	}
+	h1, .logo{
+		margin: 0;
+    	text-align: center;
+    	text-transform: uppercase;
+    	color: white;
+    	text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+	}
+</style>
 </head>
-  <body>
-  <div id="side">
-    <div class="toggle-btn" onclick="togglesidebar()">
-      <span></span>
-      <span></span>
-    </div>
-      <ul>
-        <li><center>Game</center></li>
-        <li><a href="member.html"><center>Profile</center></a></li>
-      </ul>
-  </div>
-    <br><br><br><br><br><br><br><br><br><br><br>
-  <div style="font-style: italic;font-family: fantasy; font-size: 50px; color: white;"><center>PING-PONG GAME</center></div>
-  <hr class="line" style="margin:auto;width:30%"> 
-    <br><br><br><br>
-  <div class="position_botton">
-    &emsp;&emsp;&emsp;&emsp;<button class="button"><span>1 PLAYER</span></button><button class="button2"><span>2 PLAYER</span></button>
-  </div>
-  <script type="text/javascript" src="indexjs.js">
-  </script> 
-  </body>
+<body>
+<section id="background" class="fullscreen bg-white bg-cover bg-fixed v-middle-flex padding-l mob-size-s" style="background-image:url('https://media.giphy.com/media/37q9y7WbvLAy3Wg90h/giphy.gif'); opacity: 0.9;">
+<div class="to-center">
+<h1 class=" h1 cl-ci2 size-l ">Ping-Pong Game</h1>
+<sp class="l"></sp>
+<div class="h2 cl-ci3">
+	<div class="logo">
+		<i class="fas fa-table-tennis"></i> <i class="fas fa-table-tennis"></i> <i class="fas fa-table-tennis"></i>
+	</div>
+</div>
+<sp class="xl"></sp>
+<a href="../GAME/game.html"><span class="btn ffont size-l cl-ci3">
+<i class="fas fa-play"></i> Play game
+</span></a>
+</div>
+</section>
+<iframe src="./sound/Balloon.mp3" allow="autoplay" style="display:none"></iframe>
+</body>
 </html>
